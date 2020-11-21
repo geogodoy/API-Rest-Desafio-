@@ -1,6 +1,5 @@
 package com.desafioprojuris.apirest.responsavel;
 
-import com.desafioprojuris.apirest.ordemservico.OrdemServico;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 

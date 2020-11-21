@@ -78,7 +78,7 @@ public class AtendimentoController {
     }
 
     @GetMapping("/atendimentos/finalizado/{responsavelId}")
-    @ApiOperation(value="Retorna uma lista de atendimentos finalizado por responsável")
+    @ApiOperation(value="Retorna uma lista de atendimentos finalizados por responsável")
     public List<Atendimento> listAtendimentosFinalizadoByResponsavel(@PathVariable(value = "responsavelId") long responsavelId){
 
         return atendimentoService.findAtendimentosFinalizadoByResponsavel(responsavelId);

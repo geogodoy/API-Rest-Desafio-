@@ -1,8 +1,5 @@
 package com.desafioprojuris.apirest.responsavel;
 
-
-import com.desafioprojuris.apirest.ordemservico.OrdemServico;
-import com.desafioprojuris.apirest.ordemservico.payload.OrdemServicoRequest;
 import com.desafioprojuris.apirest.responsavel.payload.ResponsavelRequest;
 import com.desafioprojuris.apirest.responsavel.service.ResponsavelService;
 import io.swagger.annotations.Api;
