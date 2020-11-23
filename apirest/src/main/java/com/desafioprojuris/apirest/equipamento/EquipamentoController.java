@@ -31,7 +31,7 @@ public class EquipamentoController {
 
     @PutMapping("/equipamento/{id}")
     @ApiOperation(value="Atualiza um equipamento")
-    public Equipamento updateequipamentoCliente(@PathVariable(value = "id") long id,
+    public Equipamento updateEquipamentoCliente(@PathVariable(value = "id") long id,
                                  @Valid @RequestBody EquipamentoUpdateRequest equipamentoUpdateRequest) {
         Equipamento equipamento = equipamentoService.findEquipamento(id);
 

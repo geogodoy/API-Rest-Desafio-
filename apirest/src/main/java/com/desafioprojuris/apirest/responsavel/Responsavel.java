@@ -12,8 +12,8 @@ import javax.persistence.*;
 public class Responsavel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "atendimento")
-    @SequenceGenerator(name = "atendimento", sequenceName = "s_atendimento", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "responsavel")
+    @SequenceGenerator(name = "responsavel", sequenceName = "s_responsavel", allocationSize = 1)
     private long id;
 
     private String nome;

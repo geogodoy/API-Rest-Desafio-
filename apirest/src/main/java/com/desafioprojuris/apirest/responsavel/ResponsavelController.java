@@ -1,5 +1,7 @@
 package com.desafioprojuris.apirest.responsavel;
 
+import com.desafioprojuris.apirest.equipamento.Equipamento;
+import com.desafioprojuris.apirest.equipamento.payload.EquipamentoUpdateRequest;
 import com.desafioprojuris.apirest.responsavel.payload.ResponsavelRequest;
 import com.desafioprojuris.apirest.responsavel.service.ResponsavelService;
 import io.swagger.annotations.Api;
@@ -26,5 +28,14 @@ public class ResponsavelController {
     @ApiOperation(value="Cria um responsável")
     public Responsavel createResponsavel(@Valid @RequestBody ResponsavelRequest responsavelRequest) {
         return responsavelService.createResponsavel(responsavelRequest);
+    }
+
+    @PutMapping("/responsavel/{id}")
+    @ApiOperation(value="Atualiza um responsável")
+    public Responsavel updateResponsavelCliente(@PathVariable(value = "id") long id,
+                                                @Valid @RequestBody ResponsavelRequest responsavelRequest) {
+        Responsavel responsavel = responsavelService.findResponsavel(id);
+
+        return responsavelService.updateResponsavel(responsavel, responsavelRequest);
     }
 }

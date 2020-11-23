@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 public class OrdemServicoNotFoundExcpetion extends RuntimeException {
 
     public OrdemServicoNotFoundExcpetion(long ordemServicoId) {
-        super(String.format("A ordem de servico '%d' não foi encontrada", ordemServicoId));
+        super(String.format("A ordem de serviço '%d' não foi encontrada", ordemServicoId));
     }
 
 }

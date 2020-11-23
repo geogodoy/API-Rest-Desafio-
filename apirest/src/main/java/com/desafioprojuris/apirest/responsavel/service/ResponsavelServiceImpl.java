@@ -28,6 +28,14 @@ public class ResponsavelServiceImpl implements ResponsavelService{
     }
 
     @Override
+    public Responsavel updateResponsavel(Responsavel responsavel, ResponsavelRequest responsavelRequest) {
+        responsavel.setNome(responsavelRequest.getNome());
+        responsavel.setMatricula(responsavelRequest.getMatricula());
+
+        return responsavelRepository.save(responsavel);
+    }
+
+    @Override
     public Responsavel findResponsavel(long id) {
         Responsavel responsavel = responsavelRepository.findById(id);
 

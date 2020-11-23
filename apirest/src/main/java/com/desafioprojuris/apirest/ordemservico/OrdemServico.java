@@ -1,11 +1,12 @@
 package com.desafioprojuris.apirest.ordemservico;
 
-import com.desafioprojuris.apirest.cliente.Cliente;
 import com.desafioprojuris.apirest.equipamento.Equipamento;
+import com.desafioprojuris.apirest.responsavel.Responsavel;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -19,9 +20,13 @@ public class OrdemServico {
     private long id;
 
     @ManyToOne
-    private Cliente cliente;
-
-    @ManyToOne
     private Equipamento equipamento;
 
+    @ManyToOne
+    private Responsavel responsavel;
+
+    private LocalDateTime inicioAtendimento;
+    private LocalDateTime finalAtendimento;
+    private String status;
+    private String observacao;
 }
