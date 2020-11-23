@@ -9,12 +9,8 @@ import javax.validation.constraints.NotNull;
 @Setter
 public class OrdemServicoCreateRequest {
 
-    @NotNull(message = "id do equipamento deve ser informado")
     private long equipamentoId;
-
-    @NotNull(message = "id do responsável deve ser informado")
     private long responsavelId;
-
     private String observacao;
 
 }

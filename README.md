@@ -1,5 +1,5 @@
 # Instruções 
-* Para rodar a aplicação basta executar ApirestApplication, irá subir na porta 8080
+* Para rodar a aplicação basta executar a classe principal ApirestApplication, irá subir na porta 8080
 * Ao subir as aplicações o banco de dados e as tabelas serão criadas no banco H2
 * Deve ser incluído primeiramente o cliente, logo após poderá ser cadastrado seu respectivo equipamento, no equipamento é preciso informar o  id do cliente. Ademais é possível 
 cadastrar o responsável, este cuidará do atendimento da ordem de serviço. Por fim, poderá ser criada a ordem de serviço, onde será possível acompanhar todas as fases do atendimento

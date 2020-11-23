@@ -9,14 +9,8 @@ import javax.validation.constraints.*;
 @Setter
 public class ClienteCreateRequest {
 
-    @NotBlank(message = "nome deve ser informado")
     private String nome;
-
     private String endereco;
-
-    @NotBlank(message = "telefone deve ser informada")
     private String telefone;
-
-    @NotBlank(message = "e-mail deve ser informado")
     private String email;
 }
