@@ -41,10 +41,11 @@ public class OrdemServicoController {
 
     @PutMapping("/ordem/servico/finish/{id}")
     @ApiOperation(value="Finaliza o atendimento da ordem de serviço")
-    public void finishOrdemServico(@PathVariable(value = "id") long id) {
+    public void finishOrdemServico(@PathVariable(value = "id") long id,
+                                   @Valid @RequestBody OrdemServicoRequest ordemServicoRequest) {
         OrdemServico ordemServico = ordemServicoService.findOrdemServico(id);
 
-        ordemServicoService.finishOrdemServico(ordemServico);
+        ordemServicoService.finishOrdemServico(ordemServico, ordemServicoRequest);
     }
 
     @PutMapping("/ordem/servico/pause/{id}")

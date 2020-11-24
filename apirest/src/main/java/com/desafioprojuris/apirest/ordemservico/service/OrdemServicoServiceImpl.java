@@ -64,8 +64,9 @@ public class OrdemServicoServiceImpl implements OrdemServicoService {
     }
 
     @Override
-    public void finishOrdemServico(OrdemServico ordemServico) {
+    public void finishOrdemServico(OrdemServico ordemServico, OrdemServicoRequest ordemServicoRequest) {
         ordemServico.setFinalAtendimento(LocalDateTime.now());
+        ordemServico.setObservacao(ordemServicoRequest.getObservacao());
         ordemServico.setStatus("FINALIZADO");
 
         ordemServicoRepository.save(ordemServico);

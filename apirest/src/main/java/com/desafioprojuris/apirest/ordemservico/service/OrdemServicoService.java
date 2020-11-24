@@ -14,7 +14,7 @@ public interface OrdemServicoService {
 
     void pauseOrdemServico(OrdemServico ordemServico, OrdemServicoRequest ordemServicoRequest);
 
-    void finishOrdemServico(OrdemServico ordemServico);
+    void finishOrdemServico(OrdemServico ordemServico, OrdemServicoRequest ordemServicoRequest);
 
     OrdemServico findOrdemServico(long id);
 
