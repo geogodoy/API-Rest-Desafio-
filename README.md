@@ -1,4 +1,5 @@
 # Instruções 
+* Este projeto é um desafio de codificação para um processo seletivo, por favor leia as intruções para poder compreender melhor.
 * Para rodar a aplicação basta executar a classe principal ApirestApplication, irá subir na porta 8080
 * Ao subir as aplicações o banco de dados e as tabelas serão criadas no banco H2
 * Deve ser incluído primeiramente o cliente, logo após poderá ser cadastrado seu respectivo equipamento, no equipamento é preciso informar o  id do cliente. Ademais é possível 
